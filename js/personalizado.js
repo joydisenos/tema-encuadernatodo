@@ -16,7 +16,7 @@ $('.cantidades').change(function(){
 	          var subtotalPrecio = parseInt($(this).find('.cantidades').val()) * parseInt($(this).find('.precios').val());
 
 	     
-	            $(this).find('.subtotal').text(subtotalPrecio);
+	            /*$(this).find('.subtotal').text(subtotalPrecio);*/
 
 	            totalPrecio += subtotalPrecio;
 

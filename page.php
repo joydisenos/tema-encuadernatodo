@@ -28,7 +28,7 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
-			<?php if(is_page( 'presupuesto' )){  ?>
+			<?php if(is_page( 'presupuesto-en-linea' )){  ?>
 
 			<?php 
 			global $wpdb;
@@ -53,7 +53,7 @@ get_header(); ?>
                     <td class=""><?php echo $row->nombre; ?></td>
                     <td> <input type="number" class="cantidades" min="0" value="0" name="cantidad"> 
                     <input type="hidden" class="precios" name="precio" value="<?php echo $row->precio; ?>">
-                    <div class="subtotal"></div>
+                    <!-- <div class="subtotal"></div> -->
                     
               
                     </td>
@@ -71,7 +71,7 @@ get_header(); ?>
 
         </div>
         
-    </div>
+    
 			
 		<?php } ?>
 

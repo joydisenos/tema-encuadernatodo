@@ -102,9 +102,7 @@ class presupuesto_encuadernatodo extends WP_Widget {
                     <td class=""><?php echo $row->nombre; ?></td>
                     <td> <input type="number" class="cantidades" min="0" value="0" name="cantidad"> 
                     <input type="hidden" class="precios" name="precio" value="<?php echo $row->precio; ?>">
-                    <div class="subtotal"></div>
-                    
-              
+                    <!-- <div class="subtotal"></div> -->
                     </td>
                 </tr>
 
@@ -112,11 +110,15 @@ class presupuesto_encuadernatodo extends WP_Widget {
 
             <?php } ?>
             </tbody>
+            <tr>
+            		<td></td>
+            		<td><div id="suma" class="resultado-presupuesto">0</div></td>
+            	</tr>
         </table>
 
         </div>
-        <div id="suma" class="resultado-presupuesto"></div>
-    </div>
+        
+  
 
    
     <?php
