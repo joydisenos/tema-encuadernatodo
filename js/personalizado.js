@@ -27,7 +27,7 @@ $('.cantidades').change(function(){
 	});
 
 	$().fancybox({
-    selector : '[class="proyect-pop"]',
+    selector : '[href^="http://"]',
     loop     : true
 });
  
