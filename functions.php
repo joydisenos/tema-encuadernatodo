@@ -9,9 +9,13 @@ function encuadernatodo_theme() {
 	// https://codex.wordpress.org/Function_Reference/wp_enqueue_style
 	// wp_enqueue_style( $handle, $src, $deps, $ver, $media )
 	wp_enqueue_style('sydney', get_template_directory_uri() .'/style.css');
-	
-	
+	wp_enqueue_style('fancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css');
+
+
+	wp_enqueue_script('fancyboxscript', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js' , array('jquery'),'3.3.1');	
 	wp_enqueue_script('personalizado', get_stylesheet_directory_uri() .'/js/personalizado.js', array('jquery'),'3.3.1');
+
+
 	// enqueue de estilos del tema hijo
 	// wp_enqueue_style('encuadernatodo', get_stylesheet_directory_uri() .'/style.css', array('sydney'));
 	

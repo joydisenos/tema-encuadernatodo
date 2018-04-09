@@ -26,6 +26,10 @@ $('.cantidades').change(function(){
 
 	});
 
+	$().fancybox({
+    selector : '[class="proyect-pop"]',
+    loop     : true
+});
  
 });
  
