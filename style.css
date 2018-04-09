@@ -16,11 +16,14 @@
 .subtotal{
 	display: none;
 }
+.servicios thead{
+	font-weight: bold;
+	color: #000000;
+}
 .resultado-presupuesto{
 	width: 100%;
 	text-align: center;
 	padding: 10px;
-	text-shadow: 1px 1px 2px #000;
 	font-weight: bold;
 	font-size: 24px;
 	color: #000000;
@@ -39,14 +42,33 @@
 	position: fixed!important;
 	bottom: 0;
 	left: 0;
-	
+	opacity: 0.8;
+	transition: all ease .5s;
+	-webkit-transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	-o-transition: all ease .5s;	
+}
+.boton-social:hover{
+	opacity: 1;
 }
 .boton-social p{
 	font-size: medium;
 	font-weight: bold;
 	padding: 5px;
+	transform: translateY(150px);
+	-webkit-transform: translateY(150px);
+	-moz-transform: translateY(150px);
+	-o-transform: translateY(150px);
+	transition: all ease .5s;
+	-webkit-transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	-o-transition: all ease .5s;
 }
 .boton-social:hover> p{
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-o-transform: translateY(0px);
 	background: #ffffff;
 	box-shadow: 2px 2px 3px #000000;
 	-webkit-box-shadow: 2px 2px 3px #000000;
