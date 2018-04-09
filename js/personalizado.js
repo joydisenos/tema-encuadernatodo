@@ -27,7 +27,7 @@ $('.cantidades').change(function(){
 	});
 
 	$().fancybox({
-    selector : '[href^="http://"]',
+    selector : '[href*="wp-content/uploads"]',
     loop     : true
 });
  
